@@ -74,7 +74,7 @@ namespace ControleContatosAPI.Repositorios
             }
         }
 
-        //Método interno, alimenta os métodos de Atualizar e Apagar
+        //Método interno, alimenta os métodos de Atualizar, Apagar e AlterarSenhaUsuario
         public async Task<UsuarioModel> BuscarUsuarioModelPorId(int id)
         {
             return await _bancoContext.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
